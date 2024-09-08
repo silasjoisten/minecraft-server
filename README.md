@@ -23,7 +23,7 @@ services:
     image: ghcr.io/silasjoisten/minecraft-server:latest
     environment:
       - EULA=true
-      - MEMORY=4G
+      - MEMORY=2G
     ports:
       - "25565:25565"
     volumes:
