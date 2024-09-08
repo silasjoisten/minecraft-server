@@ -18,3 +18,7 @@ backup: export BACKUP_FILENAME=`TZ='Europe/Berlin' date +'%Y-%m-%d_%H-%M-%S'`
 backup: stop ## Backup world data and configurations
 	@tar -zcvf backup/${BACKUP_FILENAME}_world.tar.gz data/world/
 	@tar -zcvf backup/${BACKUP_FILENAME}_config.tar.gz data/banned-ips.json data/banned-players.json data/ops.json data/server.properties data/whitelist.json
+
+.PHONY: tunnel
+tunnel: ## Tunnel the Minecraft server to the internet
+	@ngrok tcp 25565
