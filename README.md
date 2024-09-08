@@ -1,6 +1,6 @@
 # Minecraft Server
 
-### Installation
+## Installation
 
 1. Install [Docker](https://docs.docker.com/get-docker/)
 2. Install [Docker Compose](https://docs.docker.com/compose/install/)
@@ -11,7 +11,9 @@
 
 You can access the server on port `25565`
 
-### `docker compose`
+## Usage
+
+### With docker compose
 
 you can use the image directly with `docker compose`:
 
@@ -31,7 +33,7 @@ services:
     restart: unless-stopped
 ```
 
-### `Docker`
+### With Docker
 
 You can also use the image directly with `docker`:
 
