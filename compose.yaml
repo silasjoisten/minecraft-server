@@ -1,0 +1,14 @@
+services:
+  minecraft-server:
+    build: .
+    container_name: minecraft-server
+    environment:
+      - EULA=true
+      - MEMORY=4G
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./data:/opt/minecraft
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
