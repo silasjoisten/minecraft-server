@@ -13,9 +13,13 @@ ENV MEMORY=2G
 WORKDIR /opt/minecraft
 RUN chown -R www-data:www-data /opt/minecraft
 
-# Download the Minecraft server .jar file
+# Download the Minecraft server.jar file
 RUN wget -O /server.jar https://piston-data.mojang.com/v1/objects/59353fb40c36d304f2035d51e7d6e6baa98dc05c/server.jar \
     && chown www-data:www-data /server.jar
+
+# Download the Minecraft paper.jar file
+RUN wget -O /paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21.1/builds/111/downloads/paper-1.21.1-111.jar \
+    && chown www-data:www-data /paper.jar
 
 USER www-data
 

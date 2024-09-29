@@ -4,6 +4,7 @@ services:
     container_name: minecraft-server
     environment:
       - EULA=true
+      - PAPER=true
       - MEMORY=4G
     ports:
       - "25565:25565"
