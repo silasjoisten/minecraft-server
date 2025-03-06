@@ -5,7 +5,7 @@ RUN apt-get update \
     && apt-get install wget --yes
 
 # Set environment variables (You can customize these)
-ENV MINECRAFT_VERSION=1.21.1
+ENV MINECRAFT_VERSION=1.21.4
 ENV EULA=true
 ENV MEMORY=2G
 
@@ -18,7 +18,7 @@ RUN wget -O /server.jar https://piston-data.mojang.com/v1/objects/59353fb40c36d3
     && chown www-data:www-data /server.jar
 
 # Download the Minecraft paper.jar file
-RUN wget -O /paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21.1/builds/111/downloads/paper-1.21.1-111.jar \
+RUN wget -O /paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21.4/builds/190/downloads/paper-1.21.4-190.jar \
     && chown www-data:www-data /paper.jar
 
 USER www-data
