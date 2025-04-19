@@ -18,7 +18,7 @@ RUN wget -O /server.jar https://piston-data.mojang.com/v1/objects/59353fb40c36d3
     && chown www-data:www-data /server.jar
 
 # Download the Minecraft paper.jar file
-RUN wget -O /paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21.4/builds/190/downloads/paper-1.21.5-190.jar \
+RUN wget -O /paper.jar https://api.papermc.io/v2/projects/paper/versions/1.21.5/builds/22/downloads/paper-1.21.5-22.jar \
     && chown www-data:www-data /paper.jar
 
 USER www-data
