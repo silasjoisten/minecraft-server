@@ -5,7 +5,7 @@ RUN apt-get update \
     && apt-get install wget --yes
 
 # Set environment variables (You can customize these)
-ENV MINECRAFT_VERSION=1.21.5
+ENV MINECRAFT_VERSION=1.21.8
 ENV EULA=true
 ENV MEMORY=2G
 
