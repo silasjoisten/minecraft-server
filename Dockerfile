@@ -1,5 +1,5 @@
 # Use the official OpenJDK as the base image for running Java applications
-FROM openjdk:21-jdk-slim
+FROM openjdk:22-jdk-slim
 
 RUN apt-get update \
     && apt-get install wget --yes
